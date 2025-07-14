@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Symptom Checker</title>
+    <link rel="stylesheet" href="symptom-form.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Symptom Checker</h2>
+        <form id="symptomForm">
+            <label for="symptoms">Enter your symptoms (comma separated):</label>
+            <input type="text" id="symptoms" name="symptoms" placeholder="e.g., headache, fever, cough" autocomplete="off" required>
+            <!-- The mic button will be injected by JS -->
+            <button type="submit">Submit</button>
+        </form>
+        <div id="result"></div>
+    </div>
+
+    <script src="voice-input.js"></script>
+    <script src="symptom-form.js"></script>
+</body>
+</html>
